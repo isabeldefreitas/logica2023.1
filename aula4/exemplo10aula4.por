@@ -6,7 +6,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro n, idade, maior18, menor18
+		inteiro n, idade, maior18=0, menor18=0
 		escreva("Digite o numero de pessoas: ")
 		leia(n)
 
@@ -23,20 +23,21 @@ programa
 			
 			menor18--
 		}
+	}
 		
 		escreva("Maiores de 18: ", maior18, "\n")
 		escreva("Menores de 18: ", menor18, "\n")
-	}
+	
 }
-
+}
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 189; 
+ * @POSICAO-CURSOR = 300; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {i, 13, 15, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

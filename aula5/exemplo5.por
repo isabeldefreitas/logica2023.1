@@ -1,23 +1,25 @@
+//Faça um algoritmo que leia as cinco vogais 
+//e exiba na tela na ordem inversa.
+
 programa
 {
-
 	
 	funcao inicio()
-	
 	{
-		inteiro a=1, cont=0
+		caracter vogais[5]
 		
-			faca
-			{
-			
-			escreva("Digite um numero: ")
-			leia(a)
-			cont=cont+a
-			}
-		
-			enquanto (a!=0)
+		para(inteiro i=0; i < 5; i++)
+		{
+			escreva("Digite a vogal: ")
+			leia(vogais[i])
 
-		escreva("Soma:", cont, "\n")	
+		}
+		
+		para(inteiro i=4; i >= 0; i--)
+		{
+			escreva(vogais[i], "\n")
+
+		}
 		
 	}
 }
@@ -26,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 71; 
+ * @POSICAO-CURSOR = 257; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

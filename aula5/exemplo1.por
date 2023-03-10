@@ -1,24 +1,16 @@
 programa
 {
-
-	
+	inteiro idade
 	funcao inicio()
 	
 	{
-		inteiro a=1, cont=0
-		
-			faca
-			{
-			
-			escreva("Digite um numero: ")
-			leia(a)
-			cont=cont+a
-			}
-		
-			enquanto (a!=0)
+	
+		para(inteiro i=0; i < 3; i++){
+		escreva("Digite sua idade: ")
+		leia(idade)
 
-		escreva("Soma:", cont, "\n")	
-		
+		}
+		escreva(idade)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 71; 
+ * @POSICAO-CURSOR = 28; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
