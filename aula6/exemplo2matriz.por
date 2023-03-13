@@ -1,36 +1,33 @@
-/*Faça um algoritmo que leia as cinco vogais 
-e exiba na tela na ordem inversa.*/
-
 programa
 {
-	
+	inteiro matriz[3][2]={{20,10},
+	                      {30,40},
+	                      {50,60}}
 	funcao inicio()
 	{
-		caracter vogais[5]
-		
-		para(inteiro i=0; i < 5; i++)
+		para(inteiro linha=0; linha < 3; linha++)
 		{
-			escreva("Digite a vogal: ")
-			leia(vogais[i])
-
+			para(inteiro coluna=0; coluna < 2; coluna++)
+			{
+				escreva(matriz[linha][coluna])
+				se (coluna==0){
+					escreva("-")
+				}
 		}
-		
-		para(inteiro i=4; i >= 0; i--)
-		{
-			escreva(vogais[i], "\n")
-
+		escreva("\n")
 		}
-		
+
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 252; 
+ * @POSICAO-CURSOR = 106; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vogais, 9, 11, 6}-{i, 11, 15, 1}-{i, 18, 15, 1};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
