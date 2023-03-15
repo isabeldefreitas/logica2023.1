@@ -3,26 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		real nota1, nota2
+		inteiro a= 1000, b=2000
 		
-		escreva("Digite a nota1: ", "\n")
-		leia(nota1)
+		alterarValor(a,b)
+		escreva("o valor de a é: ", a, "\n")
+		escreva("o valor de b é: ", b, "\n")
 
-		escreva("Digite a nota2: ", "\n")
-		leia(nota2)
-
-
-		escreva("A media é:", media(nota1,nota2))//parametro
-		
 	}
 
-	//funcao com retorno do tipo real(retornar pra quem ta chamando)
-	funcao real media(real nota1, real nota2)
+	funcao alterarValor(inteiro &v, inteiro y)
 	{
-		real calculaMedia
-		calculaMedia = (nota1+nota2)/2
-		retorne calculaMedia
-		
+		v=1500
+		y=3000
+		escreva("o valor de v é: ", v, "\n")
+		escreva("o valor de y é: ", y, "\n")
 
 	}
 }
@@ -31,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 417; 
+ * @POSICAO-CURSOR = 85; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

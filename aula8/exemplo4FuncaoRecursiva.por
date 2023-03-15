@@ -3,35 +3,32 @@ programa
 	
 	funcao inicio()
 	{
-		real nota1, nota2
-		
-		escreva("Digite a nota1: ", "\n")
-		leia(nota1)
+		/*para(inteiro i=0; i > 0; i--){
+			escreva("O valor de i é: ")
 
-		escreva("Digite a nota2: ", "\n")
-		leia(nota2)
-
-
-		escreva("A media é:", media(nota1,nota2))//parametro
+		}*/
+		exibir(20)
 		
 	}
 
-	//funcao com retorno do tipo real(retornar pra quem ta chamando)
-	funcao real media(real nota1, real nota2)
-	{
-		real calculaMedia
-		calculaMedia = (nota1+nota2)/2
-		retorne calculaMedia
-		
-
-	}
+	funcao exibir(inteiro i){
+		//condiçao de parada
+		se(i==0){
+			escreva(i)
+		}
+		senao {
+			escreva("O valor de i é: ", i,"\n")
+			//decremento
+			exibir(i-1)
+		}
+}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 417; 
+ * @POSICAO-CURSOR = 300; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

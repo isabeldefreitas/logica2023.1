@@ -3,27 +3,29 @@ programa
 	
 	funcao inicio()
 	{
-		real nota1, nota2
+		inteiro numero
+		escreva("Numero: ")
+		leia(numero)
+		escreva("Resultado: "+ somaNumAnteriores(numero))
 		
-		escreva("Digite a nota1: ", "\n")
-		leia(nota1)
-
-		escreva("Digite a nota2: ", "\n")
-		leia(nota2)
-
-
-		escreva("A media é:", media(nota1,nota2))//parametro
 		
 	}
 
-	//funcao com retorno do tipo real(retornar pra quem ta chamando)
-	funcao real media(real nota1, real nota2)
+	funcao inteiro somaNumAnteriores(inteiro numero)
 	{
-		real calculaMedia
-		calculaMedia = (nota1+nota2)/2
-		retorne calculaMedia
 		
-
+		inteiro resultado
+		//condiçao de parada
+		se(numero<=1)
+		{
+			retorne 1
+		}
+		senao {
+			//recursividade
+			//chamada
+			resultado=somaNumAnteriores(numero-1)+numero
+			retorne resultado
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -31,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 417; 
+ * @POSICAO-CURSOR = 319; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

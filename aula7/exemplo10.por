@@ -1,29 +1,26 @@
 programa
 {
+	inclua biblioteca Util
+	inclua biblioteca Texto
 	
 	funcao inicio()
 	{
-		real nota1, nota2
 		
-		escreva("Digite a nota1: ", "\n")
-		leia(nota1)
-
-		escreva("Digite a nota2: ", "\n")
-		leia(nota2)
-
-
-		escreva("A media é:", media(nota1,nota2))//parametro
+		inteiro resultado
+		cadeia texto
 		
-	}
+		escreva(Util.sorteia(1,1000), "\n")
+		resultado=Util.sorteia(1,1000)
+		escreva(resultado)
+		Util.aguarde(2000)
 
-	//funcao com retorno do tipo real(retornar pra quem ta chamando)
-	funcao real media(real nota1, real nota2)
-	{
-		real calculaMedia
-		calculaMedia = (nota1+nota2)/2
-		retorne calculaMedia
-		
+		escreva("\n Texto:")
+		leia(texto)
+		escreva(Texto.caixa_alta(texto))
 
+		//contar quantos caracteres tem o texto digitado
+
+		escreva("\n",Texto.numero_caracteres(texto))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -31,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 417; 
+ * @POSICAO-CURSOR = 126; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
