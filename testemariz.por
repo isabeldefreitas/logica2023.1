@@ -1,31 +1,33 @@
 programa
 {
-	
+		
 	funcao inicio()
 	{
-		inteiro numero[10]
+		inteiro matriz[3][2]= {{22,10},{40,10},{19,30}}
+
+
+		para(inteiro linha=0; linha < 3; linha++){
+			para(inteiro coluna=0; coluna <2; coluna++){
+
+				escreva(matriz[linha][coluna])
+				se (coluna==0){
+					escreva("-")
+				}
+
+				
+			}
 		
-		para(inteiro i=0; i < 10; i++){
-			escreva("Digite o ", i+1, "º Número: ")
-			leia(numero[i])
-		}
-		escreva("\nOrdem inversa: \n")
-		para(inteiro i=9; i >= 0; i--){
-			
-			escreva(numero[i],"\n")
-
-		}
-
-
-		
+		escreva("\n")
 	}
+ }
+
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 189; 
+ * @POSICAO-CURSOR = 170; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

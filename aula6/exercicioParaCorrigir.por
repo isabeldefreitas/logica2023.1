@@ -4,44 +4,34 @@
 
 programa
 {
-	
-	funcao inicio()
-	{
-		cadeia nome[2][3], telefone[2][3], email[2][3]
 
-		para(inteiro linha=0; linha < 2; linha++)
-		{
-			para(inteiro coluna=0; coluna < 3; coluna++)
-			{
-				escreva("nome: ")
-				leia(nome[linha][coluna])
+    funcao inicio()
+    {
+        cadeia matriz [2][3]
 
-				escreva("telefone: ")
-				leia(telefone[linha][coluna])
+        para(inteiro i=0; i <=1; i++){
+            para(inteiro j=0; j <=2; j++){
+                escreva("Leia os dados ["+i+"]" + "[" +j+ "]:" )
+                leia(matriz[i][j])
+            }
+        }
+        limpa()
+        para(inteiro i=0; i <=1; i++){
+            para(inteiro j=0; j <=2; j++){
+                escreva(matriz[i][j],"\t")
+            }
+        escreva("\n")
+        }
 
-				escreva("email: ")
-				leia(email[linha][coluna])
-
-				}
-		escreva("\n")
-		para(inteiro linha=0; linha < 2; linha++){
-			para(inteiro coluna=0; coluna < 3; coluna++){
-				escreva(nome[linha][coluna]," ")	
-			}
-			escreva("\n")
-		}
-		
-	}
-  }
+    }
 }
-
 
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 583; 
+ * @POSICAO-CURSOR = 568; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

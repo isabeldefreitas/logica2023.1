@@ -13,32 +13,37 @@ programa
 		escreva("Digite um numero: \n")
 			leia(numero)
 			
-		para(inteiro linha=0; linha < 2; linha++){
-			para(inteiro coluna=0; coluna < 3; coluna++){
+		para(inteiro linha=0; linha < 4; linha++){
+			para(inteiro coluna=0; coluna < 2; coluna++){
 
 			     se(numero==matriz[linha][coluna])
 				{
 	    				escreva("Este numero existe na matriz \n")
-					
-				}
-				senao se(numero!=matriz[linha][coluna])
-			     {
 					escreva("Preencha com outro valor: \n")
 					leia(numero)
+					matriz[linha][coluna]=numero
 				}
-		
-		
+				
 		}
 		
 	}
-}
+		para(inteiro linha=0; linha < 4; linha++){
+	            para(inteiro coluna=0; coluna < 2; coluna++){
+	                escreva(matriz[linha][coluna])
+	                se(coluna == 0){
+	                    escreva(" , ")
+	                }
+	            }
+	            escreva("\n")
+	        }
+  }
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 268; 
+ * @POSICAO-CURSOR = 639; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {numero, 10, 10, 6}-{matriz, 10, 18, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
